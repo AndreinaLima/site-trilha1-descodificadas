@@ -175,6 +175,7 @@ span {
 
 }
 
+
 @media screen and (max-width: 1300px) {
   .imagens-comidas {
     bottom: -100px;
@@ -271,6 +272,7 @@ span {
   font-size: 0.8rem;
   align-items: center;
 }
+
 
 .img-content img {
   width: 10px;
@@ -490,14 +492,22 @@ span {
 .gallery__item:hover .overlay-gallery {
   opacity: 1;
 }
-
+.overlay-gallery p {
+ margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
+  .overlay-gallery {
+    opacity: 1;
+  }
   .overlay-gallery h2 {
     font-size: .9rem;
   }
 
   .overlay-gallery span {
     font-size: .6rem;
+  }
+  .overlay-gallery p {
+    font-size: .7rem;
   }
 }
 
@@ -519,7 +529,7 @@ span {
 
 @media screen and (min-width: 1200px) {
   .video iframe {
-    width: 1250px;
+    width: 1120px;
   }
 }
 
@@ -580,7 +590,11 @@ form>input,
 textarea {
   margin-bottom: 20px;
   padding: 5px;
+  border-color: rgba(0, 0, 0, 0.178);
+  outline-color: var(--primary-red);
 }
+
+
 
 form>button {
   background-color: var(--primary-red);
